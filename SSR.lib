@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Crydom_PF_SSR
+#
+DEF Crydom_PF_SSR U 0 40 Y Y 1 F N
+F0 "U" 25 200 60 H V C CNN
+F1 "Crydom_PF_SSR" 0 -200 60 H V C CNN
+F2 "" -1600 -300 60 H V C CNN
+F3 "" -1600 -300 60 H V C CNN
+DRAW
+S 350 -150 -350 150 0 1 0 N
+X LOADA 1 450 -100 100 L 50 50 1 1 U
+X LOADB 2 450 100 100 L 50 50 1 1 U
+X Control+ 3 -450 100 100 R 50 50 1 1 I
+X Control- 4 -450 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

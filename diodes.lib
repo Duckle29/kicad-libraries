@@ -1,0 +1,90 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# D
+#
+DEF D D 0 40 Y Y 1 F N
+F0 "D" 0 200 60 H V C CNN
+F1 "D" 0 0 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 0  75 100  175 100 N
+P 2 0 1 0  75 150  75 50 N
+P 6 0 1 0  -125 100  -25 100  -25 150  75 100  -25 50  -25 100 N
+X A 1 -125 100 0 R 50 50 1 1 I
+X C 2 175 100 0 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# OPV322
+#
+DEF OPV322 D 0 40 Y Y 1 F N
+F0 "D" 0 200 60 H V C CNN
+F1 "OPV322" 0 0 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 0  75 100  175 100 N
+P 2 0 1 0  75 150  75 50 N
+P 6 0 1 0  -125 100  -25 100  -25 150  75 100  -25 50  -25 100 N
+X A 1 -125 100 0 R 50 50 1 1 I
+X C 2 175 100 0 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Photodiode
+#
+DEF Photodiode D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Photodiode" 0 -195 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Diode_*
+ D-Pak_TO252AA
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+$ENDFPLIST
+DRAW
+P 2 0 1 6  -50 50  -50 -50 N
+P 3 0 1 0  50 50  -50 0  50 -50 F
+P 5 0 1 0  -60 -150  -10 -100  -35 -100  -10 -125  -10 -100 N
+P 5 0 1 0  -40 -70  -65 -70  -40 -95  -40 -70  -90 -120 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Phototransistor
+#
+DEF Phototransistor Q 0 40 N N 1 F N
+F0 "Q" 0 100 50 H V C CNN
+F1 "Phototransistor" 0 -195 50 H V C CNN
+F2 "" 5 -45 50 V V C CNN
+F3 "" 5 -45 50 V V C CNN
+$FPLIST
+ Diode_*
+ D-Pak_TO252AA
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+$ENDFPLIST
+DRAW
+P 2 0 1 0  -50 -95  -50 -5 N
+P 2 0 1 0  -50 -75  0 -125 N
+P 2 0 1 0  0 -150  0 -125 N
+P 2 0 1 0  0 25  -50 -25 N
+P 2 0 1 0  0 25  0 50 N
+P 3 0 1 0  -15 -110  -35 -105  -25 -95 N
+P 3 0 1 0  -15 -110  -20 -90  -35 -105 N
+P 4 0 1 0  -80 -15  -70 -25  -80 -15  -90 -5 N
+P 5 0 1 0  -95 -65  -115 -65  -95 -45  -95 -65  -115 -45 N
+P 5 0 1 0  -70 -25  -70 -15  -70 -5  -90 -25  -70 -25 N
+X C 1 0 50 0 L 50 50 1 1 P
+X E 2 0 -150 0 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
